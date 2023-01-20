@@ -1,91 +1,84 @@
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import styles from './page.module.css'
-
-const inter = Inter({ subsets: ['latin'] })
-
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <>
+        <nav className="flex items-center flex-wrap p-5">
+            <a className="font-bold mr-5 text-2xl inline-flex items-center uppercase" href="/">
+                C++ Blog
+            </a>
+        </nav>
+        <div className="flex flex-col flex-grow">
+            <div className="p-5">
+                <div className="max-w-3xl mx-auto text-center items-center mt-10 py-10">
+                    <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-snug md:leading-snug lg:leading-snug xl:leading-snug">C++
+                        Blog</h1>
+                    <div className="md:text-lg py-10">
+                        <p className="text-gray-500">Hey, this is a starting blog about programming language c++.</p>
+                    </div>
+                </div>
+            </div>
+            <div className="m-5 flex-grow max-w-screen-lg lg:mx-auto lg:flex lg:flex-wrap">
+                <div className="lg:pr-20 lg:w-2/3">
+                    <div className="my-20">
+                        <a className="group focus:outline-none" href="/example">
+                            <h2 className="font-bold text-2xl lg:text-4xl lg:leading-snug group-hover:underline group-focus:underline">
+                                Article Header
+                            </h2>
+                            <p className="my-5 text-lg text-gray-500">
+                                Description
+                            </p>
+                        </a>
+                    </div>
+                    <div className="my-20">
+                        <a className="group focus:outline-none" href="/example">
+                            <h2 className="font-bold text-2xl lg:text-4xl lg:leading-snug group-hover:underline group-focus:underline">
+                                Article Header
+                            </h2>
+                            <p className="my-5 text-lg text-gray-500">
+                                Description
+                            </p>
+                        </a>
+                    </div>
+                    <div className="my-20">
+                        <a className="group focus:outline-none" href="/example">
+                            <h2 className="font-bold text-2xl lg:text-4xl lg:leading-snug group-hover:underline group-focus:underline">
+                                Article Header
+                            </h2>
+                            <p className="my-5 text-lg text-gray-500">
+                                Description
+                            </p>
+                        </a>
+                    </div>
+                    <div className="my-20">
+                        <a className="group focus:outline-none" href="/example">
+                            <h2 className="font-bold text-2xl lg:text-4xl lg:leading-snug group-hover:underline group-focus:underline">
+                                Article Header
+                            </h2>
+                            <p className="my-5 text-lg text-gray-500">
+                                Description
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <div className="lg:w-1/3 lg:p-5">
+                    <div className="my-16">
+                        <h3 className="uppercase text-sm font-bold py-2 text-gray-500">
+                            <a href="/blog">Categories</a>
+                        </h3>
+                        <ul className="text-xl font-medium leading-loose">
+                            <li>
+                                <a href="/blog/code">Code</a>
+                            </li>
+                            <li>
+                                <a href="/blog/projects">Projects</a>
+                            </li>
+                            <li>
+                                <a href="/blog/software">Software</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-        <div className={styles.thirteen}>
-          <Image src="/thirteen.svg" alt="13" width={40} height={31} priority />
-        </div>
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+    </>
   )
 }
