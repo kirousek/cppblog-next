@@ -8,16 +8,13 @@ body {
 }
 
 *::-webkit-scrollbar {
-    width: 4px;
+    all: none;
 }
 
 *::-webkit-scrollbar-track {
-    background: rgb(229 231 235 / 1);
-    border-radius: 5px;
+    all: none;    
 }
 
 *::-webkit-scrollbar-thumb {
-    background-color: rgb(229 231 235 / 1);
-    border-radius: 14px;
-    border: 1px solid rgb(229 231 235 / 1);
+    all: none;
 }
